@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda Junho 2026 - Alerta Michael Jackson</title>
+
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background:#f2f2f2;
+  padding:20px;
+}
+
+h1{
+  text-align:center;
+  background:#d9d9d9;
+  padding:15px;
+  border:2px solid #000;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:white;
+}
+
+th, td{
+  border:1px solid #000;
+  padding:8px;
+  text-align:center;
+}
+
+th{
+  background:#ccc;
+}
+
+.alerta-verde{
+  background:#00ff00 !important;
+  color:#000;
+  font-weight:bold;
+  animation: piscar 1s infinite;
+}
+
+.hoje-show{
+  background:#00cc44 !important;
+  color:#000;
+  font-weight:bold;
+}
+
+.passou{
+  background:#0077ff !important;
+  color:white;
+}
+
+@keyframes piscar{
+  0%{ opacity:1; }
+  50%{ opacity:0.35; }
+  100%{ opacity:1; }
+}
+
+.emoji{
+  font-size:22px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>AGENDA JUNHO 2026</h1>
+
+<table>
+<thead>
+<tr>
+  <th>DATA</th>
+  <th>DIA</th>
+  <th>ATRAÇÃO</th>
+  <th>POCKET SHOW</th>
+  <th>ALERTA</th>
+</tr>
+</thead>
+
+<tbody id="agenda">
+
+<tr data-date="2026-06-01">
+  <td>01/06/2026</td>
+  <td>SEGUNDA</td>
+  <td>FREDDIE-VERSO - Tributo Freddie Mercury com Krony e Banda</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-02">
+  <td>02/06/2026</td>
+  <td>TERÇA</td>
+  <td>TRIBUTO DIVAS DA MUSICA</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-03">
+  <td>03/06/2026</td>
+  <td>QUARTA</td>
+  <td>NOITE DOS BEATLES - Tributo com Star Beatles</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-05">
+  <td>05/06/2026</td>
+  <td>SEXTA</td>
+  <td>ESPECIAL MICHAEL JACKSON TRIBUTO + THE CLASSIC ROCKERS</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-08">
+  <td>08/06/2026</td>
+  <td>SEGUNDA</td>
+  <td>FREDDIE-VERSO - Tributo Freddie Mercury com Krony e Banda</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-09">
+  <td>09/06/2026</td>
+  <td>TERÇA</td>
+  <td>TRIBUTO DIVAS DA MUSICA</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-13">
+  <td>13/06/2026</td>
+  <td>SÁBADO</td>
+  <td>ESPECIAL MICHAEL JACKSON TRIBUTO + FREDDIE MERCURY</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-15">
+  <td>15/06/2026</td>
+  <td>SEGUNDA</td>
+  <td>FREDDIE-VERSO - Tributo Freddie Mercury com Krony e Banda</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-16">
+  <td>16/06/2026</td>
+  <td>TERÇA</td>
+  <td>TRIBUTO DIVAS DA MUSICA</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-19">
+  <td>19/06/2026</td>
+  <td>SEXTA</td>
+  <td>ESPECIAL MICHAEL JACKSON TRIBUTO</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-22">
+  <td>22/06/2026</td>
+  <td>SEGUNDA</td>
+  <td>FREDDIE-VERSO - Tributo Freddie Mercury com Krony e Banda</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-23">
+  <td>23/06/2026</td>
+  <td>TERÇA</td>
+  <td>TRIBUTO DIVAS DA MUSICA</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-26">
+  <td>26/06/2026</td>
+  <td>SEXTA</td>
+  <td>ESPECIAL MICHAEL JACKSON TRIBUTO + THE CLASSIC ROCKERS</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-29">
+  <td>29/06/2026</td>
+  <td>SEGUNDA</td>
+  <td>FREDDIE-VERSO - Tributo Freddie Mercury com Krony e Banda</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+<tr data-date="2026-06-30">
+  <td>30/06/2026</td>
+  <td>TERÇA</td>
+  <td>TRIBUTO DIVAS DA MUSICA</td>
+  <td>Michael Jackson | Tributo</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<script>
+function verificarAlertas(){
+  const hoje = new Date();
+  hoje.setHours(0,0,0,0);
+
+  const linhas = document.querySelectorAll("#agenda tr");
+
+  linhas.forEach(linha => {
+    const dataShow = new Date(linha.dataset.date + "T00:00:00");
+    const textoLinha = linha.innerText.toLowerCase();
+    const alerta = linha.cells[4];
+
+    const temMichael = textoLinha.includes("michael jackson");
+
+    if(!temMichael) return;
+
+    const diferencaDias = Math.floor((dataShow - hoje) / (1000 * 60 * 60 * 24));
+
+    if(diferencaDias === 1){
+      linha.classList.add("alerta-verde");
+      alerta.innerHTML = '<span class="emoji">😊</span> Amanhã tem show Michael Jackson!';
+    }
+    else if(diferencaDias === 0){
+      linha.classList.add("hoje-show");
+      alerta.innerHTML = '<span class="emoji">😊</span> Hoje é dia de show!';
+    }
+    else if(diferencaDias < 0){
+      linha.classList.add("passou");
+      alerta.innerHTML = 'Show realizado';
+    }
+    else{
+      alerta.innerHTML = 'Agendado';
+    }
+  });
+}
+
+verificarAlertas();
+</script>
+<hr>
+<a href="index01.html"><h3>Próxima Página</h3></a>
+</body>
+</html>
