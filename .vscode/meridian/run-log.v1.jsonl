@@ -12,3 +12,4 @@
 {"schemaVersion":1,"eventId":"aab1c26b-c762-4acc-8ed2-ed201cb65a2e","runId":"run-904c42e9-0389-41f5-b4b1-9e0c4748da75","timestampMs":1781028278456,"source":"router","phase":"complete","commandName":"hygiene.scan","resultKind":"ok","durationMs":334}
 {"schemaVersion":1,"eventId":"1671125e-ceed-45a3-909f-743f16a11d7a","runId":"run-12a7cc01-c9a9-4d03-8fcb-1ac331fc7dc5","timestampMs":1781028294768,"source":"router","phase":"start","commandName":"hygiene.scan"}
 {"schemaVersion":1,"eventId":"d1b5a471-b92e-4813-9a86-fd5d8e612a48","runId":"run-12a7cc01-c9a9-4d03-8fcb-1ac331fc7dc5","timestampMs":1781028294965,"source":"router","phase":"complete","commandName":"hygiene.scan","resultKind":"ok","durationMs":197}
+{"schemaVersion":1,"eventId":"e17ced4a-7528-4a29-93d3-d9c1ef41ecb3","runId":"run-1c37bc3a-e93a-4b64-bb70-b9fd940f055f","timestampMs":1781047318202,"source":"router","phase":"start","commandName":"hygiene.scan"}
